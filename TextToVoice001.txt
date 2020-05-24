@@ -1,0 +1,11 @@
+These Steps are cool in Linux Ubuntu
+
+Use espeak
+
+Copy the text in the a file text
+
+$espeak -f text.txt -v es-la -w voice.wav
+
+$lame  voice.wav 
+
+$mpg123 voice.mp3 
