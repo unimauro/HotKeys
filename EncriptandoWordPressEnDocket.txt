@@ -1,0 +1,22 @@
+:: Polyscripted Wordpress ::
+
+Is a normal way without encrypted solution
+$ docker run --name wp-cont --link mysql-cont:mysql -p 80:80 -d polyverse/demo-wp-standard
+
+Here with encrypted solution:
+$ docker run -e "MODE=poly" --name wp-cont --link mysql-cont:mysql -p 80:80 -d polyverse/ps-wp-image
+
+--------------------------------------------
+Without encrytion:
+$ docker run --rm -d --name wordpress -v $PWD/wordpress:/wordpress  --link mysql-host:mysql -p 80:80  polyverse/polyscripted-wordpress:b1805560d812c84e441b0ca0326c66bf5522c5ad
+
+With encryption:
+$ docker run --rm -d -e "MODE=polyscripted" --name wordpress -v $PWD/wordpress:/wordpress  --link mysql-host:mysql -p 80:80  polyverse/polyscripted-wordpress:b1805560d812c84e441b0ca0326c66bf5522c5ad
+
+$ echo "<?php \$myvar = \"varname\"; \$x = \$_GET['arg']; eval(\"\\\$myvar = \$x;\"); ?>" >hack.php
+
+$ docker cp hack.php wordpress:/var/www/html/
+
+$ docker stop wordpress; docker run --rm -d --name wordpress -v $PWD/wordpress:/wordpress  --link mysql-host:mysql -p 80:80  polyverse/polyscripted-wordpress:b1805560d812c84e441b0ca0326c66bf5522c5ad
+
+$ docker stop wordpress; docker run --rm -d -e "MODE=polyscripted" --name wordpress -v $PWD/wordpress:/wordpress  --link mysql-host:mysql -p 80:80  polyverse/polyscripted-wordpress:b1805560d812c84e441b0ca0326c66bf5522c5ad
