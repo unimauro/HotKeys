@@ -1,0 +1,11 @@
+
+Full Stack JavaScript RoadMap 
+
+FRONTEND 
+React js, Vue js, Angular, svelte js 
+
+BACKEND
+Express js, Nest js, Koa 
+
+DATABASE 
+MongoDB, Postgresql, MySql
