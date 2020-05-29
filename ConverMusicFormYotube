@@ -1,0 +1,11 @@
+Donwload from youtube
+$ youtube -x  URL
+if the formas os opus change to wav and to mp3
+
+$ mplayer -srate 8000 -vo null -vc null -ao pcm:fast:file="$fn.wav" "$fn"To donwload
+
+$ lame audiodump.wav
+
+That all :) 
+
+
