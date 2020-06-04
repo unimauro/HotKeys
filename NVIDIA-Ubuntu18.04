@@ -1,0 +1,21 @@
+ubuntu-drivers devices
+https://www.nvidia.com/Download/index.aspx
+chmod +x NVIDIA-Linux-x86_64-410.73.run
+sudo apt-get install gcc
+sudo apt-get install make
+sudo bash -c "echo blacklist nouveau > /etc/modprobe.d/blacklist-nvidia-nouveau.conf"
+sudo bash -c "echo options nouveau modeset=0 >> /etc/modprobe.d/blacklist-nvidia-nouveau.conf"
+cat /etc/modprobe.d/blacklist-nvidia-nouveau.conf
+
+sudo update-initramfs -u
+ctrl + alt + F2
+
+sudo telinit 3
+sudo bash NVIDIA-Linux-x86_64-410.73.run
+
+
+sudo reboot
+
+
+
+
