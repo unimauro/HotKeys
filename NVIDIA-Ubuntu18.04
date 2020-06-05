@@ -1,3 +1,5 @@
+MANDATORY In the bios remove the secure boot
+
 ubuntu-drivers devices
 https://www.nvidia.com/Download/index.aspx
 chmod +x NVIDIA-Linux-x86_64-410.73.run
