@@ -18,6 +18,7 @@ sudo bash NVIDIA-Linux-x86_64-410.73.run
 
 sudo reboot
 
+apply the instalation in sudo telinit3
 
 
 
