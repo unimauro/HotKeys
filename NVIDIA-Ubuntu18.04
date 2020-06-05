@@ -20,5 +20,19 @@ sudo reboot
 
 apply the instalation in sudo telinit3
 
+Cuda is more easy to install after to accept 
+
+export PATH=$PATH:/usr/local/cuda/bin
+export CUDADIR=/usr/local/cuda
+sudo ldconfig
+nvcc --version
+
+
+
+
+
+
+
+
 
 
