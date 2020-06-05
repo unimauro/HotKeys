@@ -1,3 +1,6 @@
+CUDA 10.2
+NVIDIA 440
+
 MANDATORY In the bios remove the secure boot
 
 ubuntu-drivers devices
@@ -27,6 +30,11 @@ export CUDADIR=/usr/local/cuda
 sudo ldconfig
 nvcc --version
 
+How to verify with a test:
+
+$ cd /usr/local/cuda/samples
+$ sudo make
+$ 
 
 
 
