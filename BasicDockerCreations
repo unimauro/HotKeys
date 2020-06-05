@@ -1,0 +1,69 @@
+Docker
+
+https://www.digitalocean.com/community/tutorials/how-to-install-and-use-docker-on-ubuntu-18-04
+
+sudo apt update
+
+sudo apt install apt-transport-https ca-certificates curl software-properties-common
+
+curl -fsSL https://download.docker.com/linux/ubuntu/gpg | sudo apt-key add -
+
+sudo add-apt-repository "deb [arch=amd64] https://download.docker.com/linux/ubuntu bionic stable"
+
+sudo apt update
+
+apt-cache policy docker-ce
+
+sudo apt install docker-ce
+
+sudo systemctl status docker
+
+
+id -nG
+
+sudo usermod -aG docker ${USER}
+
+sudo usermod -aG docker username
+
+
+docker [option] [command] [arguments]
+
+docker
+
+docker docker-subcommand --help
+
+docker info
+
+docker run hello-world
+
+docker search ubuntu
+
+docker pull ubuntu
+
+docker images
+
+docker run -it ubuntu
+
+docker ps
+
+docker ps -a
+
+docker ps -l
+
+docker start d9b100f2f636
+
+docker stop sharp_volhard
+
+docker rm festive_williams
+
+docker commit -m "What you did to the image" -a "Author Name" container_id repository/new_image_name
+
+docker commit -m "added Node.js" -a "sammy" d9b100f2f636 sammy/ubuntu-nodejs
+
+docker images
+
+docker login -u docker-registry-username
+
+docker tag sammy/ubuntu-nodejs docker-registry-username/ubuntu-nodejs
+docker push docker-registry-username/docker-image-name
+docker push sammy/ubuntu-nodejs
