@@ -17,3 +17,5 @@ $ pip install django-widget-tweaks
 $ python3 -m venv env
 
 $ source env/bin/activate
+
+    $ edit HOST ALLOW 
