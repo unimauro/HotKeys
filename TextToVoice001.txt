@@ -1,5 +1,7 @@
 These Steps are cool in Linux Ubuntu
 
+sudo apt install espeak          
+
 Use espeak
 
 Copy the text in the a file text
