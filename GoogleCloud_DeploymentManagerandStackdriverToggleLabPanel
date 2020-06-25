@@ -45,3 +45,5 @@ nano mydeploy.yaml
 
 gcloud deployment-manager deployments update my-first-depl --config mydeploy.yaml
 
+
+dd if=/dev/urandom | gzip -9 >> /dev/null &
