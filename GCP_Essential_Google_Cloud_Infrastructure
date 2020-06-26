@@ -1,0 +1,31 @@
+# Commands
+
+Essential Google Cloud Infrastructure: Foundation
+Semana 1
+
+
+### 1 LABS
+gsutil mb gs://<BUCKET_NAME>
+
+gsutil cp [MY_FILE] gs://[BUCKET_NAME]
+
+gcloud compute regions list
+
+INFRACLASS_REGION=[YOUR_REGION]
+
+echo $INFRACLASS_REGION
+
+mkdir infraclass
+
+touch infraclass/config
+
+echo INFRACLASS_REGION=$INFRACLASS_REGION >> ~/infraclass/config
+
+source infraclass/config
+echo $INFRACLASS_PROJECT_ID
+
+nano .profile
+
+### 2 LABS
+
+##Infrastructure Preview
