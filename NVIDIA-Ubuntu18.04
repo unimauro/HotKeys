@@ -35,8 +35,7 @@ How to verify with a test:
 $ cd /usr/local/cuda/samples
 $ sudo make
 $ 
-
-
+done
 
 
 
