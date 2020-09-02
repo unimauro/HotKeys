@@ -1,0 +1,15 @@
+$sudo apt-get install curl
+
+$curl -sL https://deb.nodesource.com/setup_12.x | sudo -E bash -
+
+$sudo apt-get install -y nodejs
+
+$sudo npm install npm@latest -g
+
+$sudo npm install -g create-react-app
+
+$npx create-react-app my-app
+
+$cd my-app
+
+$npm start
